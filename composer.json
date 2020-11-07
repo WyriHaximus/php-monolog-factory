@@ -1,0 +1,52 @@
+{
+  "name": "wyrihaximus/monolog-factory",
+  "description": "\ud83e\uddd0\ud83c\udfed Opinionated Monolog factory",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cees-Jan Kiewiet",
+      "email": "ceesjank@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "bramus/monolog-colored-line-formatter": "^3.0",
+    "monolog/monolog": "^2.1",
+    "psr/log": "^1.1",
+    "wyrihaximus/constants": "^1.5",
+    "wyrihaximus/monolog-formatted-psr-handler": "^1.2",
+    "wyrihaximus/monolog-processors": "^1.3"
+  },
+  "require-dev": {
+    "wyrihaximus/test-utilities": "^3.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.7"
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "unused": [
+      "php"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "WyriHaximus\\Monolog\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WyriHaximus\\Tests\\Monolog\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "composer normalize"
+    ],
+    "post-update-cmd": [
+      "composer normalize"
+    ]
+  }
+}
