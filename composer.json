@@ -12,24 +12,13 @@
     "php": "^8 || ^7.4",
     "bramus/monolog-colored-line-formatter": "^3.0.5",
     "monolog/monolog": "^2.3.5",
-    "psr/log": "^1.1.4",
+    "psr/log": "^3 || ^2 || ^1.1.4",
     "wyrihaximus/constants": "^1.6",
-    "wyrihaximus/monolog-formatted-psr-handler": "^1.2",
-    "wyrihaximus/monolog-processors": "^1.3"
+    "wyrihaximus/monolog-formatted-psr-handler": "^2 || ^1.2",
+    "wyrihaximus/monolog-processors": "^2 || ^1.3"
   },
   "require-dev": {
-    "wyrihaximus/test-utilities": "^3.7.4"
-  },
-  "config": {
-    "platform": {
-      "php": "7.4.7"
-    },
-    "sort-packages": true
-  },
-  "extra": {
-    "unused": [
-      "php"
-    ]
+    "wyrihaximus/test-utilities": "^5.0.1 || ^3.7.4"
   },
   "autoload": {
     "psr-4": {
@@ -40,6 +29,24 @@
     "psr-4": {
       "WyriHaximus\\Tests\\Monolog\\": "tests/"
     }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "composer/package-versions-deprecated": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true
+    },
+    "platform": {
+      "php": "7.4.7"
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "unused": [
+      "php"
+    ]
   },
   "scripts": {
     "post-install-cmd": [
