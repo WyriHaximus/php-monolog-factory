@@ -15,18 +15,12 @@ jobs:
         run: |
           printf "Checks found: %s\r\n" $(make task-list-ci)
           printf "::set-output name=check::%s" $(make task-list-ci)
-  lint:
-   runs-on: ubuntu-latest
-   steps:
-     - name: Lint Code Base
-       uses: docker://github/super-linter:v2.2.0
   composer-install:
     strategy:
       fail-fast: false
       matrix:
-        php: [7.4, "8.0"]
+        php: [7.4, "8.0", 8.1]
         composer: [lowest, current, highest]
-    needs: lint
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/wyrihaximusnet/php:${{ matrix.php }}-nts-alpine-dev-root
@@ -50,7 +44,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [7.4, "8.0"]
+        php: [7.4, "8.0", 8.1]
         composer: [lowest, current, highest]
         check: ${{ fromJson(needs.generate-checks-strategy.outputs.check) }}
     needs:
