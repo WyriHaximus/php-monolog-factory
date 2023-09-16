@@ -14,7 +14,7 @@
     "monolog/monolog": "^2.3.5",
     "psr/log": "^3 || ^2 || ^1.1.4",
     "wyrihaximus/constants": "^1.6",
-    "wyrihaximus/monolog-formatted-psr-handler": "^2 || ^1.2",
+    "wyrihaximus/monolog-formatted-psr-handler": "^2 || ^1.2 || ^3.0",
     "wyrihaximus/monolog-processors": "^2 || ^1.3"
   },
   "require-dev": {
