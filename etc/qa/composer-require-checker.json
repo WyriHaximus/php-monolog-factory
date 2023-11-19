@@ -2,8 +2,8 @@
   "symbol-whitelist" : [
     "null", "true", "false",
     "static", "self", "parent",
-    "array", "string", "int", "float", "bool", "iterable", "callable", "void", "object",
-    "WyriHaximus\\Constants\\Boolean\\TRUE_", "WyriHaximus\\Constants\\Boolean\\FALSE_"
+    "array", "string", "int", "float", "bool", "iterable", "callable", "void", "object", "mixed",
+    "WyriHaximus\\Constants\\Boolean\\FALSE_", "WyriHaximus\\Constants\\Boolean\\TRUE_"
   ],
   "php-core-extensions" : [
     "Core",

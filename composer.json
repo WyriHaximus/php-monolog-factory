@@ -9,16 +9,16 @@
     }
   ],
   "require": {
-    "php": "^8 || ^7.4",
-    "bramus/monolog-colored-line-formatter": "^3.0.5",
-    "monolog/monolog": "^2.3.5",
-    "psr/log": "^3 || ^2 || ^1.1.4",
+    "php": "^8.2",
+    "bramus/monolog-colored-line-formatter": "^3.1.1",
+    "monolog/monolog": "^3",
+    "psr/log": "^1.1.4 || ^2 || ^3",
     "wyrihaximus/constants": "^1.6",
-    "wyrihaximus/monolog-formatted-psr-handler": "^2 || ^1.2",
-    "wyrihaximus/monolog-processors": "^2 || ^1.3"
+    "wyrihaximus/monolog-formatted-psr-handler": "^3",
+    "wyrihaximus/monolog-processors": "^3"
   },
   "require-dev": {
-    "wyrihaximus/test-utilities": "^5.0.1 || ^3.7.4"
+    "wyrihaximus/test-utilities": "^5.6"
   },
   "autoload": {
     "psr-4": {
@@ -32,21 +32,16 @@
   },
   "config": {
     "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true,
       "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
       "ergebnis/composer-normalize": true,
       "icanhazstring/composer-unused": true,
       "infection/extension-installer": true
     },
     "platform": {
-      "php": "7.4.7"
+      "php": "8.2.13"
     },
     "sort-packages": true
-  },
-  "extra": {
-    "unused": [
-      "php"
-    ]
   },
   "scripts": {
     "post-install-cmd": [
