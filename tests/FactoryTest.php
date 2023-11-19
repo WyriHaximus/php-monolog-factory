@@ -15,9 +15,7 @@ use function strtoupper;
 
 final class FactoryTest extends TestCase
 {
-    /**
-     * @test
-     */
+    /** @test */
     public function log(): void
     {
         $handler = $this->prophesize(LoggerInterface::class);
@@ -36,7 +34,7 @@ final class FactoryTest extends TestCase
                     array_key_exists('process_id', $context['extra']) &&
                     array_key_exists('runtime', $context['extra']) &&
                     array_key_exists('value', $context['extra']) && $context['extra']['value'] === 'key';
-            })
+            }),
         )->shouldBeCalled();
 
         Factory::create('name', $handler->reveal(), ['value' => 'key'])->log(LogLevel::EMERGENCY, 'YOU\'RE FIRED', ['key' => 'value']);

@@ -3,7 +3,6 @@
 ![Continuous Integration](https://github.com/wyrihaximus/php-monolog-factory/workflows/Continuous%20Integration/badge.svg)
 [![Latest Stable Version](https://poser.pugx.org/wyrihaximus/monolog-factory/v/stable.png)](https://packagist.org/packages/wyrihaximus/monolog-factory)
 [![Total Downloads](https://poser.pugx.org/wyrihaximus/monolog-factory/downloads.png)](https://packagist.org/packages/wyrihaximus/monolog-factory/stats)
-[![Code Coverage](https://coveralls.io/repos/github/WyriHaximus/php-monolog-factory/badge.svg?branchmaster)](https://coveralls.io/github/WyriHaximus/php-monolog-factory?branch=master)
 [![Type Coverage](https://shepherd.dev/github/WyriHaximus/php-monolog-factory/coverage.svg)](https://shepherd.dev/github/WyriHaximus/php-monolog-factory)
 [![License](https://poser.pugx.org/wyrihaximus/monolog-factory/license.png)](https://packagist.org/packages/wyrihaximus/monolog-factory)
 
@@ -32,7 +31,7 @@ $monolog->info('Information');
 
 The MIT License (MIT)
 
-Copyright (c) 2020 Cees-Jan Kiewiet
+Copyright (c) 2024 Cees-Jan Kiewiet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
