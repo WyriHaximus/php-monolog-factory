@@ -19,6 +19,7 @@ use WyriHaximus\Monolog\Processors\TraceProcessor;
 use const WyriHaximus\Constants\Boolean\FALSE_;
 use const WyriHaximus\Constants\Boolean\TRUE_;
 
+/** @api */
 final class Factory
 {
     /** @param array<string, mixed> $keyValuePairs */
@@ -44,8 +45,8 @@ final class Factory
         /** @psalm-suppress InvalidArgument */
         $consoleHandler->setFormatter(new ColoredLineFormatter(
             null,
-            '[%datetime%][%channel%] %level_name%: %message%', /** @phpstan-ignore-line */
-            'Y-m-d H:i:s.u', /** @phpstan-ignore-line */
+            '[%datetime%][%channel%] %level_name%: %message%',
+            'Y-m-d H:i:s.u',
             TRUE_,
             FALSE_,
         ));
