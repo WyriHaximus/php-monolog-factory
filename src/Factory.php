@@ -29,7 +29,6 @@ final class Factory
         $logger->pushProcessor(new ToContextProcessor());
         $logger->pushProcessor(new TraceProcessor());
 
-        /** @psalm-suppress MixedAssignment */
         foreach ($keyValuePairs as $key => $value) {
             $logger->pushProcessor(new KeyValueProcessor($key, $value));
         }
@@ -42,7 +41,6 @@ final class Factory
         $logger->pushProcessor(new Processor\MemoryPeakUsageProcessor());
 
         $consoleHandler = new FormattedPsrHandler($handler);
-        /** @psalm-suppress InvalidArgument */
         $consoleHandler->setFormatter(new ColoredLineFormatter(
             null,
             '[%datetime%][%channel%] %level_name%: %message%',
